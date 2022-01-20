@@ -1,0 +1,6 @@
+framework module Pods_ZCReLogger_Example {
+  umbrella header "Pods-ZCReLogger_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

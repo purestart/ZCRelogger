@@ -1,0 +1,6 @@
+framework module ZCReLogger {
+  umbrella header "ZCReLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

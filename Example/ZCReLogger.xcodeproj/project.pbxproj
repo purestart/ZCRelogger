@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		01793762AC31CAEF683AB8EC /* Pods-ZCReLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCReLogger_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZCReLogger_Example/Pods-ZCReLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		049FF9B25BD961A56DCB1205 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		249C282FE86126CAE13936FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		049FF9B25BD961A56DCB1205 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		249C282FE86126CAE13936FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2A9F6FFE60F86837F76178FE /* Pods-ZCReLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCReLogger_Example.release.xcconfig"; path = "Target Support Files/Pods-ZCReLogger_Example/Pods-ZCReLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		326B7AB6FD62DC94B2B346A1 /* Pods-ZCReLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCReLogger_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZCReLogger_Tests/Pods-ZCReLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C912B03BC0473DC156E55D0 /* Pods_ZCReLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCReLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		762B34BE4A30C9BD1007EC23 /* ZCReLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZCReLogger.podspec; path = ../ZCReLogger.podspec; sourceTree = "<group>"; };
+		762B34BE4A30C9BD1007EC23 /* ZCReLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZCReLogger.podspec; path = ../ZCReLogger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFD0A2106ACDD1F6E0B646BB /* Pods_ZCReLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCReLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				326B7AB6FD62DC94B2B346A1 /* Pods-ZCReLogger_Tests.debug.xcconfig */,
 				5ACB93397D69AE983B45FF0B /* Pods-ZCReLogger_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZCReLogger_Example/Pods-ZCReLogger_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ZCReLogger/ZCReLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZCReLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
