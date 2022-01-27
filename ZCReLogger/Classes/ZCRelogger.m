@@ -11,7 +11,7 @@
 
 - (void) testPrint: (NSString *) text {
     
-    NSLog(@"===== ZCRelogger init ===== %@", text);
+    NSLog(@"===== ZCRelogger init ===== %@", text); 
 }
 
 @end
